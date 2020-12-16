@@ -30,11 +30,16 @@ class PokemonListView extends StatelessWidget {
   }
 
   ListTile _tile(String title, String imageUrl) => ListTile(
+        contentPadding: EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),
+        onTap: () {},
         title: Text(title,
             style: TextStyle(
               fontWeight: FontWeight.w500,
               fontSize: 20,
             )),
-        leading: CachedNetworkImage(imageUrl: imageUrl),
+        leading: CachedNetworkImage(
+          imageUrl: imageUrl,
+          width: 40.0,
+        ),
       );
 }

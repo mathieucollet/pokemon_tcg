@@ -30,12 +30,8 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
-      body: Row(
-        children: [
-          Flexible(
-            child: PokemonListView(),
-          )
-        ],
+      body: Center(
+        child: PokemonListView(),
       ),
     );
   }
